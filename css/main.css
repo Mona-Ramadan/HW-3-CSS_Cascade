@@ -1,0 +1,136 @@
+* { 
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #fff;
+    font-size: 16px;
+    font-family: "Abel", sans-serif;
+    font-weight: bolder;
+    color:rgb(156, 6, 6);
+}
+
+main {
+    /* Just becuase we are using flex doen not mean I should be using flexbox for  my FIP for everything/*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 8px;
+}
+footer > h2 {
+    text-align: left;
+}
+
+article {
+    width: 450px;
+    border: 4px solid white;
+    border-radius: 8px;
+    margin: 10px 12px;
+    text-align: left;
+}
+
+article > h2 {
+    color: rgb(192, 4, 129);
+    padding-right: 10px;
+    margin-left: 0px;
+    text-transform: uppercase;
+    text-align:center;
+}
+/* This was done to show the first-of-type work*/
+article:first-of-type {
+    border: 4px solid rgb(253, 222, 222);
+}
+
+#inprogress {
+border: 4px solid rgb(247, 240, 169);
+}
+
+#inprogress > h2 {
+    color: rgb(192, 4, 129);
+    text-transform: uppercase;
+}
+
+#done {
+    border: 4px solid rgb(200, 212, 252);
+}
+
+#done h2 {
+    color: rgb(192, 4, 129);
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 6px 8px;
+    
+}
+
+.todo_list li:nth-child(odd) {
+    background-color: rgb(253, 222, 222);
+}
+
+.inprogress_list li:nth-child(odd) {
+    background-color: rgb(247, 240, 169);
+}
+
+.done_list li:nth-child(odd) {
+    background-color: rgb(200, 212, 252);
+}
+
+.check {
+    text-align: left;
+    margin-left: 250px;
+}
+
+.decorated-heading::after {
+   /*content: "\2600";/* unicode for a sun*/
+   content: "\263A"; 
+   content: "\2618";      /* try : 26FF      */
+   color: rgb(4, 129, 23);
+   margin-left: 5px;
+}
+
+input[type="checkbox"]:checked + span::after {
+    content: "\2744"; 
+    color: rgb(183, 103, 115);
+    margin-left: 5px;
+
+}
+
+details {
+    margin-left: 250px;
+    margin-right: 250px;
+    border: solid 2px rgb(238, 211, 229);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+summary {
+    background-color: rgb(238, 211, 229);
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 225px;
+}
+
+details h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: rgb(6, 6, 84);
+}
