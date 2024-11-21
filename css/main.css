@@ -93,23 +93,25 @@ ul li {
     background-color: rgb(200, 212, 252);
 }
 
-.check {
-    text-align: left;
-    margin-left: 80px;
-}
 
 .decorated-heading::after {
    /*content: "\2600";/* unicode for a sun*/
    content: "\263A"; 
-   content: "\2618";      /* try : 26FF      */
+   content: "\2618";      /*try : 26FF*/
    color: rgb(4, 129, 23);
    margin-left: 5px;
 }
 
+.check {
+    text-align: left;
+}
+
 input[type="checkbox"]:checked + span::after {
     content: "\2744"; 
-    color: rgb(183, 103, 115);
+    color: rgb(203, 71, 51);
     margin-left: 5px;
+   
+   
 
 }
 
